@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mainNew.css">
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.0.0.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/mainNew1.js"></script>
+</head>
+<body>
+<form method="post" action="" id="formReg" class="form formReg">
+    <div class="ball">
+        <div class="frame" style="overflow: hidden">
+            <div class="allPages">
+                <div class="ballPages page1 ---!!!!page-none!!!!!">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter pageCenter1">
+                        <div class="centerName1"><div class="line lineName1 lineName1--left"></div>ПРИВЕТ<div class="line lineName1 lineName1--right"></div></div>
+                        <p class="centerText1">Здорово, что ты решил принять участие в опросе! Твое мнение может повлиять на будущее
+                            бренда Ballantine’s в России.</p>
+                        <p class="centerText1">Ответь на несколько коротких вопросов и получи небольшой комплимент от нас — купон
+                            на Ballantine’s on the rocks (Ballantine’s со льдом) в Stay True  Bar.</p>
+                        <p class="centerText1">Торопись, купон получат только первые 500 участников опроса.</p>
+                        <p class="centerText1">Давай познакомимся перед тем, как пройти опрос! Заполни, пожалуйста, данные поля:</p>
+                            <p class="maleText">Пол*</p>
+                            <div class="sex male"><div class="sexCheckbox">
+                            </div>МУЖСКОЙ</div>
+                            <div class="sex female"><div class="sexCheckbox"></div>ЖЕНСКИЙ</div>
+                            <input form="formReg" id="maleP01" class="male-radio male0" name="male0" type="checkbox">
+                            <input form="formReg" id="maleP02" class="male-radio male0" name="male0" type="checkbox">
+                            <div class="formLine">
+                                <input form="formReg" class="edit-text edit-text--left" type="text" placeholder="Имя*" name="name">
+                                <input form="formReg" class="edit-text edit-text--right" type="text" placeholder="Фамилия*" name="fam">
+                            </div>
+                            <div class="formLine">
+                                <input form="formReg" class="edit-text edit-text--left" type="text" placeholder="E-mail*" name="email">
+                                <input form="formReg" class="edit-text edit-text--right" type="text" placeholder="ДАТА РОЖДЕНИЯ*" name="date">
+                                <div class="hover hoverMail">введите правильный еmail</div>
+                                <div class="hover hoverMailDubl">E-mail уже зарегистрирован</div>
+                                <div class="hover hoverDate">Вам меньше 18 лет</div>
+                            </div>
+                            <div class="formLine">
+                                <input form="formReg" class="edit-text edit-text--left" type="text" placeholder="Город *" name="city">
+                                <input form="formReg" class="edit-text edit-text--right" type="text" placeholder="МОБИЛЬНЫЙ ТЕЛЕФОН*" name="mobile">
+                                <div class="hover hoverMobile">введите корректный телефон <b>+7__________</b></div>
+                                <div class="hover hoverMobileDubl">телефон уже зарегистрирован</div>
+                            </div>
+                            <div class="formLine formLine--last">
+                                <div class="agree"><div class="agreeCheckbox"></div><span class="agreeLink">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ*</span></div>
+                                <input form="formReg" id="agreeCheck" class="agreeCheck" name="check"  type="checkbox" >
+                                <div  class="button button1">начать опрос</div>
+                            </div>
+                    </div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                    <div class="agreeHoverContainer">
+                        <div class="agreeHover">
+                            <div class="agreeHover__Close"></div>
+                            <p class="agreeHover__text agreeHover__text--mobile">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+                            <p class="agreeHover__text">(«Согласие»)</p>
+                            <p class="agreeHover__text">Настоящим я подтверждаю, что являюсь совершеннолетним лицом, достигшим возраста 18 лет</p>
+                            <p class="agreeHover__text">Я подтверждаю, что согласен на обработку своих персональных данных:</p>
+                            <ul class="agreeList">
+                                <li class="agreeLisr__item agreeLisr__item--1">Дата рождения </li>
+                                <li class="agreeLisr__item agreeLisr__item--1">Имя, Фамилия</li>
+                                <li class="agreeLisr__item agreeLisr__item--1">e-mail</li>
+                                <li class="agreeLisr__item agreeLisr__item--1">Место жительства (город)</li>
+                                <li class="agreeLisr__item agreeLisr__item--1">Телефон</li>
+                            </ul>
+                            <p class="agreeHover__text">Также я даю согласие получать на указанный мной электронный адрес следующие уведомления:</p>
+                            <ul class="agreeList">
+                                <li class="agreeLisr__item">приглашения на мероприятия, проводимые ЗАО «П.Р.Русь» и Ballantine’s</li>
+                                <li class="agreeLisr__item">новости Ballantine’s</li>
+                                <li class="agreeLisr__item">информирование о специальных акциях Ballantine’s</li>
+                            </ul>
+                            <p class="agreeHover__text">Я проинформирован о том, что могу в любой момент отказаться от получения указанных выше
+                                уведомлений, перейдя по ссылке, указанной в уведомлениях.</p>
+                            <p class="agreeHover__text">Я согласен на трансграничную передачу своих персональных данных иностранным лицам.</p>
+                            <p class="agreeHover__text">Персональные данные собираются с целью последующего информирования лица, давшего Согласие,
+                                об ассортименте Ballantine’s, а также о хозяйственной деятельности ЗАО «П.Р.Русь»,
+                                проводимых ЗАО «П.Р.Русь» акциях и мероприятиях.</p>
+                            <p class="agreeHover__text">Операторы персональных данных:<br/>
+                                ЗАО «П.Р.Русь» (ИНН 7729104184)<br/>
+                                ООО «ИТЕЛЛА КОННЕКШНЗ» (ИНН  7720248752)</p>
+                            <div class="agreeHover__ok">
+                                Согласен
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agreeHoverContainerChecked">
+                        <div class="agreeHoverChecked">
+                            <div class="agreeHover__CloseChecked"></div>
+                            <p class="agreeHover__text">введите обязательные поля</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ballPages page2" >
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter">
+                        <div class="centerName2"><div class="line lineName2 lineName2--left"></div>ПРИВЕТ<div class="line lineName2 lineName2--right"></div></div>
+                        <p class="centerText2">Спасибо, что решил принять участие в опросе! Нам важно твое мнение — ты можешь
+                            повлиять на судьбу бренда Ballantine’s в России.
+                            <br/><br/>
+                            Кстати, по окончании опроса, тебя ждет небольшой комплимент от нас — купон на
+                            Ballantine’s on the rocks (Ballantine’s со льдом) в Stay True Bar.
+                            <br/><br/>
+                            Должны предупредить, что комплименты ждут только первых 500 участников опроса!
+                        </p>
+                        <div class="button button2">начать опрос</div>
+                    </div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                </div>
+                <div class="ballPages page3" >
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter pageCenter3">
+                        <div class="centerName3"><div class="line lineName3 lineName3--left"></div><div class="step step--1"></div><div class="line lineName3 lineName3--right"></div></div>
+                        <p class="centerText3">
+                            Насколько тебе, в целом, нравится или не нравится каждый
+                            из перечисленных музыкальных стилей?
+                        </p>
+                        <p class="centerText3 centerText3--small">один ответ по каждому музыкальному Стилю</p>
+                        <div class="list3Container">
+                            <div class="list3__left list3-none"></div>
+                                <ul class="line3">
+                                    <li class="line3__item line3__item--1 activeItem" data-music="music-0">Эмбиент /лаунж (ambient)</li><!--
+                                --><li class="line3__item nextItem" data-music="music-1">Классическая музыка</li><!--
+                                --><li class="line3__item" data-music="music-2">Электронная музыка</li><!--
+                                --><li class="line3__item" data-music="music-3">Рэп / хип хоп</li><!--
+                                --><li class="line3__item" data-music="music-4">Инди</li><!--
+                                --><li class="line3__item" data-music="music-5">Джаз</li><!--
+                                --><li class="line3__item" data-music="music-6">Метал</li><!--
+                                --><li class="line3__item" data-music="music-7">Поп-музыка</li><!--
+                                --><li class="line3__item" data-music="music-8">Панк</li><!--
+                                --><li class="line3__item" data-music="music-9">Регги</li><!--
+                                --><li class="line3__item" data-music="music-10">Ритм-энд-блюз (R'n'B)</li><!--
+                                --><li class="line3__item" data-music="music-11">Рок</li><!--
+                                --><li class="line3__item" data-music="music-12">Шансон</li><!--
+                                --><li class="line3__item" data-music="music-13">Хаус</li><!--
+                                --><li class="line3__item" data-music="music-14">Транс</li><!--
+                                --><li class="line3__item" data-music="music-15">Драм-н-бейс (Drum'n'Base)</li><!--
+                                --><li class="line3__item" data-music="music-16">Техно</li>
+                                </ul>
+                            <div class="list3__right"></div>
+                        </div>
+                        <div class="progress3">
+                            <div class="progress3__numbers">1/17</div>
+                            <div class="progress3__scale"></div>
+                        </div>
+                        <ul class="like3" data-item="0">
+                            <li class="like3__item" data-like="5">
+                                <span class="namelike3">Очень нравится</span>
+                                <div class="circle3Container"><div class="circle3"></div></div>
+                            </li>
+                            <li class="like3__item"  data-like="4">
+                                <span class="namelike3">Скорее нравится</span>
+                                <div class="circle3Container"><div class="circle3"></div></div>
+                            </li>
+                            <li class="like3__item"  data-like="3">
+                                <span class="namelike3">Отношусь нейтрально</span>
+                                <div class="circle3Container"><div class="circle3"></div></div>
+                            </li>
+                            <li class="like3__item"  data-like="2">
+                                <span class="namelike3">Cкорее не нравится</span>
+                                <div class="circle3Container"><div class="circle3"></div></div>
+                            </li>
+                            <li class="like3__item"  data-like="1">
+                                <span class="namelike3">Совсемне нравится</span>
+                                <div class="circle3Container"><div class="circle3"></div></div>
+                            </li>
+                            <li class="like3__item" data-like="99">
+                                <span class="namelike3">Трудно сказать/ не знаю</span>
+                                <div class="circle3Container"><div class="circle3"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next next3"></div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                </div>
+                <div class="agreeHoverContainerChecked-3">
+                    <div class="agreeHoverChecked">
+                        <div class="agreeHover__CloseChecked-3"></div>
+                        <p class="agreeHover__text">заполните данные про все стили</p>
+                    </div>
+                </div>
+                <div class="ballPages page4">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter">
+                        <div class="centerName4"><div class="line lineName4 lineName4--left"></div><div class="step step--2"></div><div class="line lineName4 lineName4--right"></div></div>
+                        <p class="centerText4">
+                            Каких исполнителей или группы из списка ты знаешь?
+                        </p>
+                        <p class="centerText4 centerText4--small">Отметьте все подходящие ответы</p>
+                        <ul class="groupList4">
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">ДЖИ ВИЛКС AKA G-WILX</span>
+                                <div class="group4__check" data-check="1"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Guf</span>
+                                <div class="group4__check" data-check="2"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Timati</span>
+                                <div class="group4__check" data-check="3"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">L’ONE</span>
+                                <div class="group4__check" data-check="4"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Basta aka Noggano</span>
+                                <div class="group4__check" data-check="5"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Noize MC</span>
+                                <div class="group4__check" data-check="6"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Каста</span>
+                                <div class="group4__check" data-check="7"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Макс Корж</span>
+                                <div class="group4__check" data-check="8"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Смоки Мо</span>
+                                <div class="group4__check" data-check="9"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Слим</span>
+                                <div class="group4__check" data-check="10"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Птаха</span>
+                                <div class="group4__check" data-check="11"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Triada</span>
+                                <div class="group4__check" data-check="12"></div>
+                            </li>
+                            <li class="groupList4__item group4">
+                                <span class="group4__name">Anacondaz</span>
+                                <div class="group4__check" data-check="13"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next next4"></div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                    <div class="agreeHoverContainerChecked-4">
+                        <div class="agreeHoverChecked">
+                            <div class="agreeHover__CloseChecked-4"></div>
+                            <p class="agreeHover__text">Выберете хотя бы одного исполнителя</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ballPages page5">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter pageCenter5">
+                        <div class="centerName5"><div class="line lineName5 lineName5--left"></div><div class="step step--3"></div><div class="line lineName5 lineName5--right"></div></div>
+                        <p class="centerText5">
+                            НАСКОЛЬКО ТЕБЕ НРАВИтСЯ ИЛИ НЕ НРАВЯТСЯ ЭТИ ГРУППЫ ИЛИ ИСПОЛНИТЕЛИ?
+                        </p>
+                        <p class="centerText5 centerText5--small">один ответ по каждому ИСПОЛНИТЕЛЮ</p>
+                        <div class="list5Container">
+                            <div class="list5__left list5-none"></div>
+                            <ul class="line5">
+                                <li class="line5__item">Никто не понравился .(</li>
+                            </ul>
+                            <div class="list5__right"></div>
+                        </div>
+                        <div class="progress5">
+                            <div class="progress5__numbers"></div>
+                            <div class="progress5__scale"></div>
+                        </div>
+                        <ul class="like5" data-item="0">
+                            <li class="like5__item" data-like="5">
+                                <span class="namelike.">Очень нравится</span>
+                                <div class="circle5Container"><div class="circle5"></div></div>
+                            </li>
+                            <li class="like5__item"  data-like="4">
+                                <span class="namelike5">Скорее нравится</span>
+                                <div class="circle5Container"><div class="circle5"></div></div>
+                            </li>
+                            <li class="like5__item"  data-like="3">
+                                <span class="namelike5">Отношусь нейтрально</span>
+                                <div class="circle5Container"><div class="circle5"></div></div>
+                            </li>
+                            <li class="like5__item"  data-like="2">
+                                <span class="namelike5">Cкорее не нравится</span>
+                                <div class="circle5Container"><div class="circle5"></div></div>
+                            </li>
+                            <li class="like5__item"  data-like="1">
+                                <span class="namelike5">Совсемне нравится</span>
+                                <div class="circle5Container"><div class="circle5"></div></div>
+                            </li>
+                            <li class="like5__item" data-like="99">
+                                <span class="namelike5">Трудно сказать/ не знаю</span>
+                                <div class="circle5Container"><div class="circle5"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next next5"></div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                    <div class="agreeHoverContainerChecked-5">
+                        <div class="agreeHoverChecked">
+                            <div class="agreeHover__CloseChecked-5"></div>
+                            <p class="agreeHover__text">Оцените всех исполнителей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ballPages page6">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter">
+                        <div class="centerName4"><div class="line lineName6 lineName6--left"></div><div class="step step--4"></div><div class="line lineName6 lineName6--right"></div></div>
+                        <p class="centerText4">
+                            КАКАЯ ИЗ СЛЕДУЮЩИХ ФРАЗ ЛУЧШЕ ВСЕГО ОПИСЫВАЕТ ТВОЕ ОТНОШЕНИЕ
+                            К МУЗЫКЕ В ЦЕЛОМ?
+                        </p>
+                        <ul class="groupList6">
+                            <li class="groupList6__item group6">
+                                <span class="group6__name">МУЗЫКА СОВЕРШЕННО НЕ ВАЖНА В МОЕЙ ЖИЗНИ</span>
+                                <div class="group6__check" data-check="1"></div>
+                            </li>
+                            <li class="groupList6__item group6">
+                                <span class="group6__name">МУЗЫКА ИГРАЕТ ВТОРОСТЕПЕННУЮ РОЛЬ В МОЕЙ ЖИЗНИ</span>
+                                <div class="group6__check" data-check="2"></div>
+                            </li>
+                            <li class="groupList6__item group6">
+                                <span class="group6__name">Я ОТНОШУСЬ К МУЗЫКЕ НЕЙТРАЛЬНО</span>
+                                <div class="group6__check" data-check="3"></div>
+                            </li>
+                            <li class="groupList6__item group6">
+                                <span class="group6__name">МУЗЫКА ДОСТАТОЧНО ВАЖНА ДЛЯ МЕНЯ</span>
+                                <div class="group6__check" data-check="4"></div>
+                            </li>
+                            <li class="groupList6__item group6">
+                                <span class="group6__name">МУЗЫКА ЯВЛЯЕТСЯ ОЧЕНЬ ВАЖНОЙ ЧАСТЬЮ МОЕЙ ЖИЗНИ</span>
+                                <div class="group6__check" data-check="5"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next next6"></div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                    <div class="agreeHoverContainerChecked-6">
+                        <div class="agreeHoverChecked">
+                            <div class="agreeHover__CloseChecked-6"></div>
+                            <p class="agreeHover__text">Опишите ваше отношение к музыке</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ballPages page7">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter pageCenter7">
+                        <div class="centerName7"><div class="line lineName7 lineName7--left"></div><div class="step step--5"></div><div class="line lineName7 lineName7--right"></div></div>
+                        <p class="centerText7">
+                            СКАЖИ, ПОЖАЛУЙСТА, ИЗ КАКИХ ИСТОЧНИКОВ ТЫ, КАК ПРАВИЛО, УЗНАЕшь О НОВЫХ ИСПОЛНИТЕЛЯХ/НАПРАВЛЕНИЯХ В МУЗЫКЕ?
+                        </p>
+                        <p class="centerText7 centerText7--small">Выбери все подходящие ответы</p>
+                        <ul class="groupList7">
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">ИЗ СОЦИАЛЬНЫХ СЕТЕЙ (FACEBOOK, VKONTAKTE, INSTAGRAM ETC)</span>
+                                <div class="group7__check" data-check="1"></div>
+                            </li>
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">СЛЫШУ В КАФЕ / КЛУБАХ / БАРАХ</span>
+                                <div class="group7__check" data-check="2"></div>
+                            </li>
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">ОТ ДРУЗЕЙ</span>
+                                <div class="group7__check" data-check="3"></div>
+                            </li>
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">НА МУЗЫКАЛЬНЫХ ПОРТАЛАХ (ЯНДЕКС МУЗЫКА, YOUTUBE, LAST.FM, SPOTIFY, SOUNDCLOUD И Т.П.)</span>
+                                <div class="group7__check" data-check="4"></div>
+                            </li>
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">ИЗ ПУБЛИКАЦИЙ В ПРЕССЕ</span>
+                                <div class="group7__check" data-check="5"></div>
+                            </li>
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">ИЗ ФЛАЕРОВ И РЕКЛАМНЫХ ЛИСТОВОК НА КОНЦЕРТАХ, В КЛУБАХ ИЛИ БАРАХ</span>
+                                <div class="group7__check" data-check="6"></div>
+                            </li>
+                            <li class="groupList7__item group7">
+                                <span class="group7__name">ИЗ ДРУГИХ ИСТОЧНИКОВ</span>
+                                <div class="group7__check" data-check="7"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="submit" form="formReg" class="next nextfFinal" value="">
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                    <div class="agreeHoverContainerChecked-7">
+                        <div class="agreeHoverChecked">
+                            <div class="agreeHover__CloseChecked-7"></div>
+                            <p class="agreeHover__text">Выберете хотя бы один вариант ответа</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ballPages page8">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter pageCenter8">
+                        <div class="centerName8"><div class="line lineName8 lineName8--left"></div>Спасибо за твои ответы!<div class="line lineName8 lineName8-right"></div></div>
+                        <p class="centerText8">Ты попал в первые 500 участников и получаешь уникальный код, предъявив который,<br/>
+                            ты можешь насладиться Ballantine’s On the Rocks (Ballantine’s со льдом) в STAY TRUE BAR<br/>
+                            по адресу: г. Москва, Славянская пл., 2/5/4, стр. 3.<br/>
+                            Следи за новостями на нашей странице в Facebook <a class="link8" href="http://www.facebook.com/Ballantines.Russia">www.facebook.com/Ballantines.Russia</a>
+                        </p>
+                        <div class="button button8">111 222 333</div>
+                    </div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                </div>
+                <div class="ballPages page9 page-none">
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter pageCenter8">
+                        <div class="centerName8"><div class="line lineName8 lineName8--left"></div>Спасибо за твои ответы!<div class="line lineName8 lineName8-right"></div></div>
+                        <p class="centerText8">К сожалению, лимит кодов на коктейль в баре закончился. Не расстаивайся, тебя ждет много
+                            интересного на нашей странице в Facebook <a class="link8" href="http://www.facebook.com/Ballantines.Russia">www.facebook.com/Ballantines.Russia</a>
+                        </p>
+                    </div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                </div>
+
+                <div class="ballPages pageError" >
+                    <a href="https://www.facebook.com/Ballantines.Russia" class="pageHeader"></a>
+                    <div class="pageCenter">
+                        <div class="centerName2"><div class="line lineName2 lineName2--left"></div>Ошибка<div class="line lineName2 lineName2--right"></div></div>
+                        <p class="centerText2 emailError">Данный e-mail уже зарегистрирован</p>
+                        <p class="centerText2 mobileError">Данный телефон уже зарегистрирован</p>
+                    </div>
+                    <div class="pageFooter">
+                        <div class="pageFooter__trigl"></div>
+                        <div class="pageFooter__alarm"><div class="footerAlarm-logo"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="music05" class="music-radio music0" name="musicn0" type="checkbox" value="5" form="formReg">
+    <input id="music04" class="music-radio music0" name="musicn0" type="checkbox" value="4" form="formReg">
+    <input id="music03" class="music-radio music0" name="musicn0" type="checkbox" value="3" form="formReg">
+    <input id="music02" class="music-radio music0" name="musicn0" type="checkbox" value="2" form="formReg">
+    <input id="music01" class="music-radio music0" name="musicn0" type="checkbox" value="1" form="formReg">
+    <input id="music099" class="music-radio music0" name="musicn0" type="checkbox" value="99" form="formReg">
+
+    <input id="music15" class="music-radio music1" name="musicn1" type="checkbox" value="5" form="formReg">
+    <input id="music14" class="music-radio music1" name="musicn1" type="checkbox" value="4" form="formReg">
+    <input id="music13" class="music-radio music1" name="musicn1" type="checkbox" value="3" form="formReg">
+    <input id="music12" class="music-radio music1" name="musicn1" type="checkbox" value="2" form="formReg">
+    <input id="music11" class="music-radio music1" name="musicn1" type="checkbox" value="1" form="formReg">
+    <input id="music199" class="music-radio music1" name="musicn1" type="checkbox" value="99" form="formReg">
+
+    <input id="music25" class="music-radio music2" name="musicn2" type="checkbox" value="5" form="formReg">
+    <input id="music24" class="music-radio music2" name="musicn2" type="checkbox" value="4" form="formReg">
+    <input id="music23" class="music-radio music2" name="musicn2" type="checkbox" value="3" form="formReg">
+    <input id="music22" class="music-radio music2" name="musicn2" type="checkbox" value="2" form="formReg">
+    <input id="music21" class="music-radio music2" name="musicn2" type="checkbox" value="1" form="formReg">
+    <input id="music299" class="music-radio music2" name="musicn2" type="checkbox" value="99" form="formReg">
+
+    <input id="music35" class="music-radio music3" name="musicn3" type="checkbox" value="5" form="formReg">
+    <input id="music34" class="music-radio music3" name="musicn3" type="checkbox" value="4" form="formReg">
+    <input id="music33" class="music-radio music3" name="musicn3" type="checkbox" value="3" form="formReg">
+    <input id="music32" class="music-radio music3" name="musicn3" type="checkbox" value="2" form="formReg">
+    <input id="music31" class="music-radio music3" name="musicn3" type="checkbox" value="1" form="formReg">
+    <input id="music399" class="music-radio music3" name="musicn3" type="checkbox" value="99" form="formReg">
+
+    <input id="music45" class="music-radio music4" name="musicn4" type="checkbox" value="5" form="formReg">
+    <input id="music44" class="music-radio music4" name="musicn4" type="checkbox" value="4" form="formReg">
+    <input id="music43" class="music-radio music4" name="musicn4" type="checkbox" value="3" form="formReg">
+    <input id="music42" class="music-radio music4" name="musicn4" type="checkbox" value="2" form="formReg">
+    <input id="music41" class="music-radio music4" name="musicn4" type="checkbox" value="1" form="formReg">
+    <input id="music499" class="music-radio music4" name="musicn4" type="checkbox" value="99" form="formReg">
+
+    <input id="music55" class="music-radio music5" name="musicn5" type="checkbox" value="5" form="formReg">
+    <input id="music54" class="music-radio music5" name="musicn5" type="checkbox" value="4" form="formReg">
+    <input id="music53" class="music-radio music5" name="musicn5" type="checkbox" value="3" form="formReg">
+    <input id="music52" class="music-radio music5" name="musicn5" type="checkbox" value="2" form="formReg">
+    <input id="music51" class="music-radio music5" name="musicn5" type="checkbox" value="1" form="formReg">
+    <input id="music599" class="music-radio music5" name="musicn5" type="checkbox" value="99" form="formReg">
+
+    <input id="music65" class="music-radio music6" name="musicn6" type="checkbox" value="5" form="formReg">
+    <input id="music64" class="music-radio music6" name="musicn6" type="checkbox" value="4" form="formReg">
+    <input id="music63" class="music-radio music6" name="musicn6" type="checkbox" value="3" form="formReg">
+    <input id="music62" class="music-radio music6" name="musicn6" type="checkbox" value="2" form="formReg">
+    <input id="music61" class="music-radio music6" name="musicn6" type="checkbox" value="1" form="formReg">
+    <input id="music699" class="music-radio music6" name="musicn6" type="checkbox" value="99" form="formReg">
+
+    <input id="music75" class="music-radio music7" name="musicn7" type="checkbox" value="5" form="formReg">
+    <input id="music74" class="music-radio music7" name="musicn7" type="checkbox" value="4" form="formReg">
+    <input id="music73" class="music-radio music7" name="musicn7" type="checkbox" value="3" form="formReg">
+    <input id="music72" class="music-radio music7" name="musicn7" type="checkbox" value="2" form="formReg">
+    <input id="music71" class="music-radio music7" name="musicn7" type="checkbox" value="1" form="formReg">
+    <input id="music799" class="music-radio music7" name="musicn7" type="checkbox" value="99" form="formReg">
+
+    <input id="music85" class="music-radio music8" name="musicn8" type="checkbox" value="5" form="formReg">
+    <input id="music84" class="music-radio music8" name="musicn8" type="checkbox" value="4" form="formReg">
+    <input id="music83" class="music-radio music8" name="musicn8" type="checkbox" value="3" form="formReg">
+    <input id="music82" class="music-radio music8" name="musicn8" type="checkbox" value="2" form="formReg">
+    <input id="music81" class="music-radio music8" name="musicn8" type="checkbox" value="1" form="formReg">
+    <input id="music899" class="music-radio music8" name="musicn8" type="checkbox" value="99" form="formReg">
+
+    <input id="music95" class="music-radio music9" name="musicn9" type="checkbox" value="5" form="formReg">
+    <input id="music94" class="music-radio music9" name="musicn9" type="checkbox" value="4" form="formReg">
+    <input id="music93" class="music-radio music9" name="musicn9" type="checkbox" value="3" form="formReg">
+    <input id="music92" class="music-radio music9" name="musicn9" type="checkbox" value="2" form="formReg">
+    <input id="music91" class="music-radio music9" name="musicn9" type="checkbox" value="1" form="formReg">
+    <input id="music999" class="music-radio music9" name="musicn9" type="checkbox" value="99" form="formReg">
+
+    <input id="music105" class="music-radio music10" name="musicn10" type="checkbox" value="5" form="formReg">
+    <input id="music104" class="music-radio music10" name="musicn10" type="checkbox" value="4" form="formReg">
+    <input id="music103" class="music-radio music10" name="musicn10" type="checkbox" value="3" form="formReg">
+    <input id="music102" class="music-radio music10" name="musicn10" type="checkbox" value="2" form="formReg">
+    <input id="music101" class="music-radio music10" name="musicn10" type="checkbox" value="1" form="formReg">
+    <input id="music1099" class="music-radio music10" name="musicn10" type="checkbox" value="99" form="formReg">
+
+    <input id="music115" class="music-radio music11" name="musicn11" type="checkbox" value="5" form="formReg">
+    <input id="music114" class="music-radio music11" name="musicn11" type="checkbox" value="4" form="formReg">
+    <input id="music113" class="music-radio music11" name="musicn11" type="checkbox" value="3" form="formReg">
+    <input id="music112" class="music-radio music11" name="musicn11" type="checkbox" value="2" form="formReg">
+    <input id="music111" class="music-radio music11" name="musicn11" type="checkbox" value="1" form="formReg">
+    <input id="music1199" class="music-radio music11" name="musicn11" type="checkbox" value="99" form="formReg">
+
+    <input id="music125" class="music-radio music12" name="musicn12" type="checkbox" value="5" form="formReg">
+    <input id="music124" class="music-radio music12" name="musicn12" type="checkbox" value="4" form="formReg">
+    <input id="music123" class="music-radio music12" name="musicn12" type="checkbox" value="3" form="formReg">
+    <input id="music122" class="music-radio music12" name="musicn12" type="checkbox" value="2" form="formReg">
+    <input id="music121" class="music-radio music12" name="musicn12" type="checkbox" value="1" form="formReg">
+    <input id="music1299" class="music-radio music12" name="musicn12" type="checkbox" value="99" form="formReg">
+
+    <input id="music135" class="music-radio music13" name="musicn13" type="checkbox" value="5" form="formReg">
+    <input id="music134" class="music-radio music13" name="musicn13" type="checkbox" value="4" form="formReg">
+    <input id="music133" class="music-radio music13" name="musicn13" type="checkbox" value="3" form="formReg">
+    <input id="music132" class="music-radio music13" name="musicn13" type="checkbox" value="2" form="formReg">
+    <input id="music131" class="music-radio music13" name="musicn13" type="checkbox" value="1" form="formReg">
+    <input id="music1399" class="music-radio music13" name="musicn13" type="checkbox" value="99" form="formReg">
+
+    <input id="music145" class="music-radio music14" name="musicn14" type="checkbox" value="5" form="formReg">
+    <input id="music144" class="music-radio music14" name="musicn14" type="checkbox" value="4" form="formReg">
+    <input id="music143" class="music-radio music14" name="musicn14" type="checkbox" value="3" form="formReg">
+    <input id="music142" class="music-radio music14" name="musicn14" type="checkbox" value="2" form="formReg">
+    <input id="music141" class="music-radio music14" name="musicn14" type="checkbox" value="1" form="formReg">
+    <input id="music1499" class="music-radio music14" name="musicn14" type="checkbox" value="99" form="formReg">
+
+    <input id="music155" class="music-radio music15" name="musicn15" type="checkbox" value="5" form="formReg">
+    <input id="music154" class="music-radio music15" name="musicn15" type="checkbox" value="4" form="formReg">
+    <input id="music153" class="music-radio music15" name="musicn15" type="checkbox" value="3" form="formReg">
+    <input id="music152" class="music-radio music15" name="musicn15" type="checkbox" value="2" form="formReg">
+    <input id="music151" class="music-radio music15" name="musicn15" type="checkbox" value="1" form="formReg">
+    <input id="music1599" class="music-radio music15" name="musicn15" type="checkbox" value="99" form="formReg">
+
+    <input id="music165" class="music-radio music16" name="musicn16" type="checkbox" value="5" form="formReg">
+    <input id="music164" class="music-radio music16" name="musicn16" type="checkbox" value="4" form="formReg">
+    <input id="music163" class="music-radio music16" name="musicn16" type="checkbox" value="3" form="formReg">
+    <input id="music162" class="music-radio music16" name="musicn16" type="checkbox" value="2" form="formReg">
+    <input id="music161" class="music-radio music16" name="musicn16" type="checkbox" value="1" form="formReg">
+    <input id="music1699" class="music-radio music16" name="musicn16" type="checkbox" value="99" form="formReg">
+
+    <input id="group41" class="group4-box" name="group4" type="checkbox" value="1" form="formReg">
+    <input id="group42" class="group4-box" name="group4" type="checkbox" value="2" form="formReg">
+    <input id="group43" class="group4-box" name="group4" type="checkbox" value="3" form="formReg">
+    <input id="group44" class="group4-box" name="group4" type="checkbox" value="4" form="formReg">
+    <input id="group45" class="group4-box" name="group4" type="checkbox" value="5" form="formReg">
+    <input id="group46" class="group4-box" name="group4" type="checkbox" value="6" form="formReg">
+    <input id="group47" class="group4-box" name="group4" type="checkbox" value="7" form="formReg">
+    <input id="group48" class="group4-box" name="group4" type="checkbox" value="8" form="formReg">
+    <input id="group49" class="group4-box" name="group4" type="checkbox" value="9" form="formReg">
+    <input id="group410" class="group4-box" name="group4" type="checkbox" value="10" form="formReg">
+    <input id="group411" class="group4-box" name="group4" type="checkbox" value="11" form="formReg">
+    <input id="group412" class="group4-box" name="group4" type="checkbox" value="12" form="formReg">
+    <input id="group413" class="group4-box" name="group4" type="checkbox" value="13" form="formReg">
+
+    <input id="lovemusic60" class="lovemusic-radio" name="lovemusicn6" type="checkbox" value="0" form="formReg">
+    <input id="lovemusic61" class="lovemusic-radio" name="lovemusicn6" type="checkbox" value="1" form="formReg">
+    <input id="lovemusic62" class="lovemusic-radio" name="lovemusicn6" type="checkbox" value="2" form="formReg">
+    <input id="lovemusic63" class="lovemusic-radio" name="lovemusicn6" type="checkbox" value="3" form="formReg">
+    <input id="lovemusic64" class="lovemusic-radio" name="lovemusicn6" type="checkbox" value="4" form="formReg">
+
+    <input id="group71" class="group7-box" name="group7" type="checkbox" value="1" form="formReg">
+    <input id="group72" class="group7-box" name="group7" type="checkbox" value="2" form="formReg">
+    <input id="group73" class="group7-box" name="group7" type="checkbox" value="3" form="formReg">
+    <input id="group74" class="group7-box" name="group7" type="checkbox" value="4" form="formReg">
+    <input id="group75" class="group7-box" name="group7" type="checkbox" value="5" form="formReg">
+    <input id="group76" class="group7-box" name="group7" type="checkbox" value="6" form="formReg">
+    <input id="group77" class="group7-box" name="group7" type="checkbox" value="7" form="formReg">
+</form>
+</body>
+</html>
